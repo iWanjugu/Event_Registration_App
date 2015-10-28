@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
     tools:context=".EventDetails">
 
     <ImageView
@@ -11,114 +11,167 @@
         android:layout_height="100dp"
         android:id="@+id/imageView2"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/misty_hills" />
+        android:background="@drawable/misty_hills_sm" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/textView1"
         android:inputType="text"
         android:text="Event Details"
         android:textColor="#fff"
         android:textSize="35sp"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:gravity="center_vertical"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true" />
 
-      <ImageButton
+
+    <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/imageButton"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_toRightOf="@+id/imageView4"
-        android:layout_toEndOf="@+id/imageView4"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp"
-        android:background="#000" />
+        android:id="@+id/gridLayout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/gridLayout3"
+        android:layout_toLeftOf="@+id/gridLayout2"
+        android:layout_toStartOf="@+id/gridLayout2"
+        android:background="@drawable/android_icon"
+        android:clickable="true"
+        android:contextClickable="false" />
 
-    <ImageView
+    <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/imageView4"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="19dp"
-        android:background="#000"
+        android:id="@+id/gridLayout2"
+        android:layout_alignTop="@+id/gridLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/android_icon"
         android:clickable="true" />
 
-    <ImageView
+    <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/imageView5"
-        android:background="#000"
-        android:layout_below="@+id/imageView4"
-        android:layout_toLeftOf="@+id/imageButton"
-        android:layout_toStartOf="@+id/imageButton"
-        android:layout_marginTop="22dp" />
+        android:id="@+id/gridLayout3"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/gridLayout"
+        android:layout_alignStart="@+id/gridLayout"
+        android:background="@drawable/android_icon"
+        android:clickable="true" />
 
-    <ImageView
+    <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/imageView6"
-        android:background="#000"
-        android:clickable="true"
-        android:layout_alignTop="@+id/imageView5"
-        android:layout_alignLeft="@+id/imageButton"
-        android:layout_alignStart="@+id/imageButton" />
+        android:id="@+id/gridLayout4"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignLeft="@+id/gridLayout2"
+        android:layout_alignStart="@+id/gridLayout2"
+        android:background="@drawable/android_icon"
+        android:clickable="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:layout_alignBottom="@+id/imageView4"
-        android:layout_alignLeft="@+id/imageView4"
-        android:layout_alignStart="@+id/imageView4"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="50dp"
-        android:inputType="text"
-        android:text="Speakers"
-        android:textColor="#fff" />
+    <!-- END OF GRID-->
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_alignRight="@+id/imageButton"
-        android:layout_alignEnd="@+id/imageButton"
-        android:layout_marginRight="38dp"
-        android:layout_marginEnd="38dp"
-        android:inputType="text"
-        android:text="Agenda"
-        android:textColor="#fff" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText5"
-        android:layout_alignTop="@+id/imageView5"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
-        android:inputType="text"
-        android:text="More Information"
-        android:textColor="#fff" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/imageView6"
-        android:layout_toRightOf="@+id/imageView5"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="-100dp"
-        android:inputType="text"
-        android:text="Twitter Feed"
-        android:textColor="#fff" />
+
+
+    <!--<ImageButton-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageButton"-->
+        <!--android:layout_alignTop="@+id/imageView4"-->
+        <!--android:layout_toRightOf="@+id/imageView4"-->
+        <!--android:layout_toEndOf="@+id/imageView4"-->
+        <!--android:layout_marginLeft="22dp"-->
+        <!--android:layout_marginStart="22dp"-->
+        <!--android:background="#000" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageView4"-->
+        <!--android:layout_below="@+id/imageView2"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginStart="22dp"-->
+        <!--android:layout_marginTop="19dp"-->
+        <!--android:background="#000"-->
+        <!--android:clickable="true" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageView5"-->
+        <!--android:background="#000"-->
+        <!--android:layout_below="@+id/imageView4"-->
+        <!--android:layout_toLeftOf="@+id/imageButton"-->
+        <!--android:layout_toStartOf="@+id/imageButton"-->
+        <!--android:layout_marginTop="22dp" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageView6"-->
+        <!--android:background="#000"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_alignTop="@+id/imageView5"-->
+        <!--android:layout_alignLeft="@+id/imageButton"-->
+        <!--android:layout_alignStart="@+id/imageButton" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText3"-->
+        <!--android:layout_alignBottom="@+id/imageView4"-->
+        <!--android:layout_alignLeft="@+id/imageView4"-->
+        <!--android:layout_alignStart="@+id/imageView4"-->
+        <!--android:layout_marginStart="38dp"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Speakers"-->
+        <!--android:textColor="#fff" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText4"-->
+        <!--android:layout_alignBottom="@+id/editText3"-->
+        <!--android:layout_alignRight="@+id/imageButton"-->
+        <!--android:layout_alignEnd="@+id/imageButton"-->
+        <!--android:layout_marginRight="38dp"-->
+        <!--android:layout_marginEnd="38dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Agenda"-->
+        <!--android:textColor="#fff" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText5"-->
+        <!--android:layout_alignTop="@+id/imageView5"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="More Information"-->
+        <!--android:textColor="#fff" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText6"-->
+        <!--android:layout_below="@+id/imageView6"-->
+        <!--android:layout_toRightOf="@+id/imageView5"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginTop="-100dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Twitter Feed"-->
+        <!--android:textColor="#fff" />-->
 
 
 </RelativeLayout>
