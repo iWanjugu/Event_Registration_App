@@ -18,19 +18,34 @@ public class EventDetails extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.event_details);
 
     // Creating on click change activities for a button
-    GridLayout firstGridLayout = (GridLayout)findViewById(R.id.gridLayout);
-    firstGridLayout.setOnClickListener(this);
+    GridLayout speakerGridLayout = (GridLayout)findViewById(R.id.speakerGrid);
+    speakerGridLayout.setOnClickListener(this);
+    GridLayout agendaGridLayout = (GridLayout)findViewById(R.id.agendaGrid);
+    agendaGridLayout.setOnClickListener(this);
     }
-    private void grid1click ()
+
+
+    private void speakerGridclick ()
     {
         startActivity(new Intent("android.intent.action.SPEAKERS"));
     }
+
+    private void agendaGridclick ()
+    {
+        startActivity(new Intent("android.intent.action.AGENDA"));
+    }
+
     public void onClick(View v) {
         switch (v.getId())
         {
-            case  R.id.gridLayout:
-                grid1click();
+            case  R.id.speakerGrid:
+                speakerGridclick();
+                break;
+
+            case  R.id.agendaGrid:
+                agendaGridclick();
                 break;
         }
     }
+
 }

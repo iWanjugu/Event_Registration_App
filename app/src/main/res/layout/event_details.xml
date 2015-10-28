@@ -30,13 +30,13 @@
     <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/gridLayout"
+        android:id="@+id/speakerGrid"
         android:layout_marginBottom="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_above="@+id/gridLayout3"
-        android:layout_toLeftOf="@+id/gridLayout2"
-        android:layout_toStartOf="@+id/gridLayout2"
+        android:layout_above="@+id/infoGrid"
+        android:layout_toLeftOf="@+id/agendaGrid"
+        android:layout_toStartOf="@+id/agendaGrid"
         android:background="@drawable/android_icon"
         android:clickable="true"
         android:contextClickable="false" />
@@ -44,33 +44,33 @@
     <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/gridLayout2"
-        android:layout_alignTop="@+id/gridLayout"
+        android:id="@+id/agendaGrid"
+        android:layout_alignTop="@+id/speakerGrid"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/android_icon"
+        android:background="@drawable/ic_event_black_48dp"
         android:clickable="true" />
 
     <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/gridLayout3"
+        android:id="@+id/infoGrid"
         android:layout_marginBottom="43dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/gridLayout"
-        android:layout_alignStart="@+id/gridLayout"
+        android:layout_alignLeft="@+id/speakerGrid"
+        android:layout_alignStart="@+id/speakerGrid"
         android:background="@drawable/android_icon"
         android:clickable="true" />
 
     <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/gridLayout4"
-        android:layout_below="@+id/gridLayout"
-        android:layout_alignLeft="@+id/gridLayout2"
-        android:layout_alignStart="@+id/gridLayout2"
+        android:id="@+id/twitterGrid"
+        android:layout_below="@+id/speakerGrid"
+        android:layout_alignLeft="@+id/agendaGrid"
+        android:layout_alignStart="@+id/agendaGrid"
         android:background="@drawable/android_icon"
         android:clickable="true" />
 
