@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EventDetails">
@@ -23,8 +23,9 @@
         android:textSize="35sp"
         android:textStyle="bold"
         android:gravity="center_vertical"
-        android:layout_marginBottom="16dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
 
 
     <GridLayout
@@ -37,9 +38,9 @@
         android:layout_above="@+id/infoGrid"
         android:layout_toLeftOf="@+id/agendaGrid"
         android:layout_toStartOf="@+id/agendaGrid"
-        android:background="@drawable/ic_person_outline_black_24dp"
         android:clickable="true"
-        android:contextClickable="false" />
+        android:contextClickable="false"
+        android:background="@drawable/android_icon" />
 
     <GridLayout
         android:layout_width="150dp"
@@ -50,7 +51,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/ic_event_black_48dp"
+        android:background="@drawable/icon_event"
         android:clickable="true" />
 
     <GridLayout
