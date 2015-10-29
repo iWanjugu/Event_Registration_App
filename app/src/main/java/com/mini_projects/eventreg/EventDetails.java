@@ -19,20 +19,25 @@ public class EventDetails extends AppCompatActivity implements View.OnClickListe
 
     // Creating on click change activities for a button
     GridLayout speakerGridLayout = (GridLayout)findViewById(R.id.speakerGrid);
-    speakerGridLayout.setOnClickListener(this);
+        speakerGridLayout.setOnClickListener(this);
     GridLayout agendaGridLayout = (GridLayout)findViewById(R.id.agendaGrid);
-    agendaGridLayout.setOnClickListener(this);
+        agendaGridLayout.setOnClickListener(this);
+    GridLayout infoGridLayout = (GridLayout)findViewById(R.id.infoGrid);
+        infoGridLayout.setOnClickListener(this);
+    GridLayout twitterGridLayout = (GridLayout)findViewById(R.id.twitterGrid);
+        twitterGridLayout.setOnClickListener(this);
     }
 
 
-    private void speakerGridclick ()
-    {
-        startActivity(new Intent("android.intent.action.SPEAKERS"));
-    }
+    private void speakerGridclick () {startActivity(new Intent("android.intent.action.SPEAKERS"));}
 
-    private void agendaGridclick ()
+    private void agendaGridclick () {startActivity(new Intent("android.intent.action.AGENDA"));}
+
+    private void infoGridclick () {startActivity(new Intent("android.intent.action.INFO"));}
+
+    private void twitterGridclick ()
     {
-        startActivity(new Intent("android.intent.action.AGENDA"));
+        startActivity(new Intent("android.intent.action.TWITTER"));
     }
 
     public void onClick(View v) {
@@ -44,6 +49,14 @@ public class EventDetails extends AppCompatActivity implements View.OnClickListe
 
             case  R.id.agendaGrid:
                 agendaGridclick();
+                break;
+
+            case  R.id.infoGrid:
+                infoGridclick();
+                break;
+
+            case  R.id.twitterGrid:
+                twitterGridclick();
                 break;
         }
     }
