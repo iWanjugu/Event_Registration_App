@@ -37,7 +37,7 @@
         android:layout_above="@+id/infoGrid"
         android:layout_toLeftOf="@+id/agendaGrid"
         android:layout_toStartOf="@+id/agendaGrid"
-        android:background="@drawable/android_icon"
+        android:background="@drawable/ic_person_outline_black_24dp"
         android:clickable="true"
         android:contextClickable="false" />
 
