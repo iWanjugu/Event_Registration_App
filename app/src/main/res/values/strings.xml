@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Event Registration</string>
+    <string name="event">Event Details</string>
+    <string name="speakers">Speakers</string>
+    <string name="agenda">Agenda</string>
+    <string name="info">More Information</string>
+    <string name="twitter">Twitter Feed</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
