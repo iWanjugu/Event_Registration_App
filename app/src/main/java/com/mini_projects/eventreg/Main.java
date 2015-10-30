@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Main extends AppCompatActivity implements View.OnClickListener
@@ -15,18 +16,39 @@ public class Main extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.main);
 
         // Creating on click change activities for a button
-        TextView firstTextView = (TextView)findViewById(R.id.textView);
-        firstTextView.setOnClickListener(this);
+        Button googleButton = (Button)findViewById(R.id.googleButton);
+        googleButton.setOnClickListener(this);
+
+        Button twitterButton = (Button)findViewById(R.id.twitterButton);
+        twitterButton.setOnClickListener(this);
+
+        Button facebookButton = (Button)findViewById(R.id.facebookButton);
+        facebookButton.setOnClickListener(this);
+
+        TextView registerTextView = (TextView)findViewById(R.id.registerTextView);
+        registerTextView.setOnClickListener(this);
     }
-    private void textview1click ()
+    private void toEventDetailsclick ()
     {
         startActivity(new Intent("android.intent.action.EVENTDETAILS"));
     }
     public void onClick(View v) {
         switch (v.getId())
         {
-            case  R.id.textView:
-                textview1click();
+            case R.id.googleButton:
+                toEventDetailsclick();
+                break;
+
+            case R.id.twitterButton:
+                toEventDetailsclick();
+                break;
+
+            case R.id.facebookButton:
+                toEventDetailsclick();
+                break;
+
+            case R.id.registerTextView:
+                toEventDetailsclick();
                 break;
         }
     }
