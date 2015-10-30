@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Twitter">
 
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:id="@+id/twitterImage1"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/misty_hills_sm" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/twitterText1"
-        android:inputType="text"
-        android:text="Twitter Feed"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:gravity="center_vertical"
+        android:layout_width="320dp"
+        android:layout_height="500dp"
+        android:id="@+id/twitterImage2"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/twitter_feed"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
