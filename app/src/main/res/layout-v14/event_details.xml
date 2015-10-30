@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetails">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/misty_hills_sm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:inputType="text"
+        android:text="Event Details"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/speakerGrid"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/infoGrid"
+        android:layout_toLeftOf="@+id/agendaGrid"
+        android:layout_toStartOf="@+id/agendaGrid"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:background="@drawable/android_icon" />
+
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/agendaGrid"
+        android:layout_alignTop="@+id/speakerGrid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/icon_event"
+        android:clickable="true" />
+
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/infoGrid"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/speakerGrid"
+        android:layout_alignStart="@+id/speakerGrid"
+        android:background="@drawable/android_icon"
+        android:clickable="true" />
+
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/twitterGrid"
+        android:layout_below="@+id/speakerGrid"
+        android:layout_alignLeft="@+id/agendaGrid"
+        android:layout_alignStart="@+id/agendaGrid"
+        android:background="@drawable/android_icon"
+        android:clickable="true" />
+
+    <!-- END OF GRID-->
+
+
+
+
+
+    <!--<ImageButton-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageButton"-->
+        <!--android:layout_alignTop="@+id/imageView4"-->
+        <!--android:layout_toRightOf="@+id/imageView4"-->
+        <!--android:layout_toEndOf="@+id/imageView4"-->
+        <!--android:layout_marginLeft="22dp"-->
+        <!--android:layout_marginStart="22dp"-->
+        <!--android:background="#000" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageView4"-->
+        <!--android:layout_below="@+id/imageView2"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginStart="22dp"-->
+        <!--android:layout_marginTop="19dp"-->
+        <!--android:background="#000"-->
+        <!--android:clickable="true" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageView5"-->
+        <!--android:background="#000"-->
+        <!--android:layout_below="@+id/imageView4"-->
+        <!--android:layout_toLeftOf="@+id/imageButton"-->
+        <!--android:layout_toStartOf="@+id/imageButton"-->
+        <!--android:layout_marginTop="22dp" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/imageView6"-->
+        <!--android:background="#000"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_alignTop="@+id/imageView5"-->
+        <!--android:layout_alignLeft="@+id/imageButton"-->
+        <!--android:layout_alignStart="@+id/imageButton" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText3"-->
+        <!--android:layout_alignBottom="@+id/imageView4"-->
+        <!--android:layout_alignLeft="@+id/imageView4"-->
+        <!--android:layout_alignStart="@+id/imageView4"-->
+        <!--android:layout_marginStart="38dp"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Speakers"-->
+        <!--android:textColor="#fff" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText4"-->
+        <!--android:layout_alignBottom="@+id/editText3"-->
+        <!--android:layout_alignRight="@+id/imageButton"-->
+        <!--android:layout_alignEnd="@+id/imageButton"-->
+        <!--android:layout_marginRight="38dp"-->
+        <!--android:layout_marginEnd="38dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Agenda"-->
+        <!--android:textColor="#fff" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText5"-->
+        <!--android:layout_alignTop="@+id/imageView5"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="More Information"-->
+        <!--android:textColor="#fff" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText6"-->
+        <!--android:layout_below="@+id/imageView6"-->
+        <!--android:layout_toRightOf="@+id/imageView5"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginTop="-100dp"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Twitter Feed"-->
+        <!--android:textColor="#fff" />-->
+
+
+</RelativeLayout>
