@@ -21,6 +21,7 @@ public class Splash extends AppCompatActivity {
 
 //    New Rotation variable
     final Animation an = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
+//        Fade out effect on the splash as it ends
     final Animation an2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.abc_fade_out);
 
 
@@ -35,7 +36,7 @@ public class Splash extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 splashImageView.startAnimation(an2);
                 finish();
-                Intent i = new Intent("android.intent.action.MAIN");
+                Intent i = new Intent(getBaseContext(),Main.class);
                 startActivity (i);
             }
 
