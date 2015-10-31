@@ -28,7 +28,8 @@
 
         <activity
             android:name=".EventDetails"
-            android:label="@string/event" >
+            android:label="@string/event"
+            android:theme="@style/custom_actionbar_style">
             <intent-filter>
                 <action android:name="android.intent.action.EVENTDETAILS" />
 
