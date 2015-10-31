@@ -6,38 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".EventDetails">
 
-    <!--<ImageView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:id="@+id/imageView2"-->
-        <!--android:layout_gravity="center_horizontal"-->
-        <!--android:background="@drawable/misty_hills_sm" />-->
-
-
     <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/speakerGrid"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="19dp"
+        android:layout_marginEnd="12dp"
         android:clickable="true"
         android:contextClickable="false"
         android:background="@drawable/android_icon"
+        android:layout_marginTop="40dp"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/agendaGrid"
-        android:layout_marginTop="41dp" />
+        android:layout_toStartOf="@+id/agendaGrid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/speakers"
+        android:id="@+id/speakerTextView"
+        android:layout_below="@+id/speakerGrid"
+        android:layout_alignStart="@+id/speakerGrid"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:width="80dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/agendaGrid"
-        android:layout_alignTop="@+id/speakerGrid"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="23dp"
         android:background="@drawable/icon_event"
-        android:clickable="true" />
+        android:clickable="true"
+        android:layout_above="@+id/speakerTextView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/agenda"
+        android:id="@+id/AgendaTextView"
+        android:width="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignTop="@+id/speakerTextView"
+        android:layout_alignStart="@+id/agendaGrid"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
 
     <GridLayout
         android:layout_width="150dp"
@@ -45,8 +61,22 @@
         android:id="@+id/infoGrid"
         android:background="@drawable/android_icon"
         android:clickable="true"
-        android:layout_alignTop="@+id/twitterGrid"
-        android:layout_alignStart="@+id/speakerGrid" />
+        android:layout_below="@+id/speakerTextView"
+        android:layout_alignStart="@+id/speakerGrid"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/info"
+        android:id="@+id/infoTextView"
+        android:layout_marginTop="15dp"
+        android:width="140dp"
+        android:layout_below="@+id/infoGrid"
+        android:layout_alignStart="@+id/infoGrid"
+        android:layout_marginStart="5dp"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="150dp"
@@ -54,54 +84,21 @@
         android:id="@+id/twitterGrid"
         android:background="@drawable/android_icon"
         android:clickable="true"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/agendaGrid"
-        android:layout_marginTop="52dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="SPEAKERS"
-        android:id="@+id/textView"
-        android:layout_below="@+id/speakerGrid"
-        android:layout_alignStart="@+id/speakerGrid"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="15dp"
-        android:width="80dp"
-        android:textAlignment="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="AGENDA"
-        android:id="@+id/textView2"
-        android:layout_marginStart="33dp"
-        android:width="100dp"
-        android:textAlignment="gravity"
-        android:layout_alignTop="@+id/textView"
+        android:layout_alignTop="@+id/infoGrid"
         android:layout_alignStart="@+id/agendaGrid" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:text="INFORMATION"
-        android:id="@+id/textView3"
-        android:layout_marginTop="15dp"
-        android:width="95dp"
-        android:layout_below="@+id/infoGrid"
-        android:layout_alignStart="@+id/infoGrid"
-        android:layout_marginStart="25dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="TWITTER FEED"
-        android:id="@+id/textView4"
-        android:width="100dp"
+        android:text="@string/twitter"
+        android:id="@+id/twitterTextView"
+        android:width="60dp"
         android:textAlignment="gravity"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginLeft="0dp" />
+        android:layout_alignTop="@+id/infoTextView"
+        android:layout_alignStart="@+id/twitterGrid"
+        android:layout_marginStart="45dp"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <!-- END OF GRID-->
 
