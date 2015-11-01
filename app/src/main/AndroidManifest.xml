@@ -77,6 +77,47 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".Wifi"
+            android:label="@string/wifi" >
+            <intent-filter>
+                <action android:name="android.intent.action.WIFI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Day_1"
+            android:label="@string/day1" >
+            <intent-filter>
+                <action android:name="android.intent.action.DAYONE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Venue"
+            android:label="@string/venue" >
+            <intent-filter>
+                <action android:name="android.intent.action.VENUE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Location_1"
+            android:label="@string/location1" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOCATIONONE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>

@@ -15,7 +15,11 @@
     <string name="info">More Information</string>
     <string name="twitter">Twitter Feed</string>
 
-
+    <!--  -->
+    <string name="wifi">WiFI</string>
+    <string name="day1">Day One</string>
+    <string name="venue">The Venues</string>
+    <string name="location1">Location One</string>
 
 
     <string name="hello_world">Hello world!</string>
