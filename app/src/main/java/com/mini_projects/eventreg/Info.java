@@ -56,8 +56,21 @@ public class Info extends AppCompatActivity {
         String[] names;
         names = getResources().getStringArray(R.array.info_array);
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-                names);
+        //// using in built layout
+        //ListAdapter theAdapter = new ArrayAdapter<String>(
+        // this,
+        // android.R.layout.simple_list_item_1,
+        //  names
+        // );
+
+        // using customized layout
+        ListAdapter theAdapter = new ArrayAdapter<String>(
+                this,
+                R.layout.listview_row_layout,
+                R.id.textViewTemplate,
+                names
+            );
+
         ListView theListView = (ListView)findViewById(R.id.infoList);
         theListView.setAdapter(theAdapter);
 
