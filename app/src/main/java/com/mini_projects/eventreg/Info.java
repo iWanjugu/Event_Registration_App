@@ -1,10 +1,12 @@
 package com.mini_projects.eventreg;
 
 import android.app.ListActivity;
+import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -63,13 +65,26 @@ public class Info extends AppCompatActivity {
         //  names
         // );
 
-        // using customized layout
-        ListAdapter theAdapter = new ArrayAdapter<String>(
+//        // using customized layout
+//        ListAdapter theAdapter = new ArrayAdapter<String>(
+//                this,
+//                R.layout.listview_row_layout,
+//                R.id.textViewTemplate,
+//                names
+//            );
+//
+//        // using customized layout
+//        ListAdapter theAdapter = new ArrayAdapter<String>(
+//                this,
+//                R.layout.listview_row_layout,
+//                R.id.textViewTemplate,
+//                names
+//        );
+
+        ListAdapter theAdapter = new MyListAdapter(
                 this,
-                R.layout.listview_row_layout,
-                R.id.textViewTemplate,
                 names
-            );
+        );
 
         ListView theListView = (ListView)findViewById(R.id.infoList);
         theListView.setAdapter(theAdapter);
@@ -79,13 +94,12 @@ public class Info extends AppCompatActivity {
            AdapterView.OnItemClickListener() {
                @Override
                public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                    String ListItemPicked = "You clicked " +
-                      String.valueOf(adapterView.getItemAtPosition(position));
+                   String ListItemPicked = "You clicked " +
+                           String.valueOf(adapterView.getItemAtPosition(position));
                    Toast.makeText(Info.this, ListItemPicked, Toast.LENGTH_SHORT).show();
                }
            });
 
 
     }
-
 }
