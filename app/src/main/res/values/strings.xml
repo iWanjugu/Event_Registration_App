@@ -21,6 +21,15 @@
     <string name="venue">The Venues</string>
     <string name="location1">Location One</string>
 
+    <!-- More Info Activity -->
+    <string-array name="info_array">
+        <item>Wi-FI</item>
+        <item>Venue</item>
+        <item>Payment</item>
+        <item>Transport</item>
+        <item>Contact</item>
+    </string-array>
+
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
