@@ -54,7 +54,24 @@ public class Info extends Activity {
     //METHOD 2
     //Using Array defined in 'strings.xml'
 
-    String[] info_names = {"WIFI", "VENUE", "PAYMENT", "TRANSPORT", "CONTACTS"};
+    String[] info_names = {
+            "WIFI",
+            "VENUE",
+            "PAYMENT",
+            "TRANSPORT",
+            "CONTACTS"
+    };
+
+
+    Integer[] imgid = {
+            R.drawable.wifi_50,
+            R.drawable.arena_50,
+            R.drawable.coins_50,
+            R.drawable.shuttle_50,
+            R.drawable.phone_50,
+    };
+
+
     ListView infoList;
 
     @Override
@@ -64,7 +81,8 @@ public class Info extends Activity {
 
         ListAdapter theAdapter = new MyListAdapter(
                 this,
-                info_names
+                info_names,
+                imgid
         );
 
         infoList = (ListView) findViewById(R.id.infoList);
