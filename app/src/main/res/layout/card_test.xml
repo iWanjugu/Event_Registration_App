@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentPadding="8dp"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:id="@+id/speakerImage" />
+
+            <TextView
+                android:id="@+id/speakerName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/speakerImage"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="@string/speaker_name"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/speakerDescription"
+                android:layout_toEndOf="@+id/speakerImage"
+                android:layout_below="@+id/speakerName"
+                android:layout_alignParentEnd="false"
+                android:text="@string/speaker_description"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/speakerTwitter"
+                android:layout_toEndOf="@+id/speakerImage"
+                android:layout_below="@+id/speakerDescription"
+                android:text="@string/speaker_twitter"
+                android:layout_marginLeft="10dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
