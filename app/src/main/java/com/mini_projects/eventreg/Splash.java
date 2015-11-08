@@ -1,5 +1,6 @@
 package com.mini_projects.eventreg;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class Splash extends AppCompatActivity {
+public class Splash extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

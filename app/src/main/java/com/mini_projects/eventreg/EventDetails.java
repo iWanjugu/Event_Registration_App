@@ -3,6 +3,7 @@ package com.mini_projects.eventreg;
 /**
  * Created by iWanjugu on 27/10/2015.
  */
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.widget.GridLayout;
 
 
-public class EventDetails extends AppCompatActivity implements View.OnClickListener {
+public class EventDetails extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +36,7 @@ public class EventDetails extends AppCompatActivity implements View.OnClickListe
 
     private void infoGridclick () {startActivity(new Intent("android.intent.action.INFO"));}
 
-    private void twitterGridclick ()
-    {
-        startActivity(new Intent("android.intent.action.TWITTER"));
+    private void twitterGridclick (){startActivity(new Intent("android.intent.action.TWITTER"));
     }
 
     public void onClick(View v) {
