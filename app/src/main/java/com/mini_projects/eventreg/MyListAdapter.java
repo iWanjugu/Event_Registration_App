@@ -11,7 +11,7 @@ import android.widget.TextView;
 class MyListAdapter extends ArrayAdapter<String> {
 
     public MyListAdapter(Context context, String[] values) {
-        super(context, R.layout.listview_row_layout_2);
+        super(context, R.layout.listview_row_layout_2, values);
     }
 
     @Override
@@ -25,6 +25,7 @@ class MyListAdapter extends ArrayAdapter<String> {
         String infoItem = getItem(position);
         TextView theTextView = (TextView) theView.findViewById(R.id.textViewTemplate2);
         theTextView.setText(infoItem);
+
         ImageView theImageView = (ImageView) theView.findViewById(R.id.imageViewTemplate2);
         theImageView.setImageResource(R.drawable.wifi_50);
 
