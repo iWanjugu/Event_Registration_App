@@ -33,4 +33,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="speaker_name">Name</string>
+    <string name="speaker_description">Description</string>
+    <string name="speaker_twitter">Twitter</string>
 </resources>
